@@ -1,8 +1,8 @@
 package DesignPatterns.strategy;
 
-public class Character {
+public abstract class Character {
     protected String name;
-    WeaponBehavior weaponBehavior;
+    private WeaponBehavior weaponBehavior;
 
     public Character(String name)
     {
@@ -10,14 +10,12 @@ public class Character {
     }
 
     public void attack(){
-        
+        weaponBehavior.attack();
     }
 
     public void setWeaponBehavior(WeaponBehavior weaponBehavior){
-
+        this.weaponBehavior = weaponBehavior;
     }
 
-    public String toString(){
-        return "";
-    }
+    public abstract String toString();
 }
