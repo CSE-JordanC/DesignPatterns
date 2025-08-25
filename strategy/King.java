@@ -7,6 +7,6 @@ public class King extends Character{
     }
 
     public String toString(){
-        return "";
+        return "__/^^^\\__" + "\nYour character is a King named " + name;
     }
 }

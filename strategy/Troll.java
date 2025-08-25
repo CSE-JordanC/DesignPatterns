@@ -7,6 +7,6 @@ public class Troll extends Character{
     }
 
     public String toString(){
-        return "";
+        return "/^\\" + "\nYour character is a Troll named " + name;
     }
 }

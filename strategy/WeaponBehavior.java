@@ -1,9 +1,7 @@
 package DesignPatterns.strategy;
 
-public interface WeaponBehavior {
-    public default int speed(){
-            return 0;
-        }
+public abstract class WeaponBehavior {
+    private int speed;
 
-    public void attack();
+    public abstract void attack();
 }
