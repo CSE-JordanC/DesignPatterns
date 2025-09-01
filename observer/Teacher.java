@@ -1,5 +1,8 @@
 package DesignPatterns.observer;
 
+/*
+ * An observer that reacts to both greetings and warnings
+ */
 public class Teacher implements Observer {
     public Teacher(Subject watchman, Subject greeter) {
         watchman.registerObserver(this);
@@ -9,6 +12,9 @@ public class Teacher implements Observer {
     @Override
     public void update(boolean warning, int note) {
         if (warning) {
+            /*
+             * Switches between different warnings or greetings based on note
+             */
             switch (note) {
                 case 1:
                 System.out.println("Teacher: Takes children home to be more safe.");
